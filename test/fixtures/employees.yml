@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  is_being_onboarded: false
+  what_i_do: MyText
+  fun_fact: MyText
+  slack_username: MyString
+
+two:
+  is_being_onboarded: false
+  what_i_do: MyText
+  fun_fact: MyText
+  slack_username: MyString

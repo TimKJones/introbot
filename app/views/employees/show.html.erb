@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Is being onboarded:</strong>
+  <%= @employee.is_being_onboarded %>
+</p>
+
+<p>
+  <strong>What i do:</strong>
+  <%= @employee.what_i_do %>
+</p>
+
+<p>
+  <strong>Fun fact:</strong>
+  <%= @employee.fun_fact %>
+</p>
+
+<p>
+  <strong>Slack username:</strong>
+  <%= @employee.slack_username %>
+</p>
+
+<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<%= link_to 'Back', employees_path %>

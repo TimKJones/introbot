@@ -1,0 +1,37 @@
+<%= form_with(model: employee, local: true) do |form| %>
+  <% if employee.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
+
+      <ul>
+      <% employee.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :is_being_onboarded %>
+    <%= form.check_box :is_being_onboarded, id: :employee_is_being_onboarded %>
+  </div>
+
+  <div class="field">
+    <%= form.label :what_i_do %>
+    <%= form.text_area :what_i_do, id: :employee_what_i_do %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fun_fact %>
+    <%= form.text_area :fun_fact, id: :employee_fun_fact %>
+  </div>
+
+  <div class="field">
+    <%= form.label :slack_username %>
+    <%= form.text_field :slack_username, id: :employee_slack_username %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

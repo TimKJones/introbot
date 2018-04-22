@@ -1,0 +1,7 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  scheduled_intro_date: 2018-04-22 14:58:45
+
+two:
+  scheduled_intro_date: 2018-04-22 14:58:45
